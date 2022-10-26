@@ -1,0 +1,93 @@
+
+
+$highlight: #3399bb;
+$highlight-light: #4db8ff;
+$highlight-dark: #000027;
+
+$white: #fff;
+$dark: #161b1e;
+
+$primary: rgb(43, 120, 121);
+$primary20: rgba(17, 158, 127, 0.2);
+$primary-light: rgb(145, 232, 213);
+$primary-dark: rgb(9, 83, 67);
+
+$secondary: #f7f7f7;
+$secondary-light: #ffffff;
+$secondary-dark: #c4c4c4;
+
+$shadow: rgba(0, 0, 0, 0.1);
+
+//page
+$page-background: #eeeeee;
+$page-min-height: 100vh;
+
+// topbar
+$topbar-height: 80px;
+$topbar-background: $white;
+
+// nav
+$nav-height: 64px;
+$nav-dropdown-height: 500px;
+
+// logo
+$logo-height: 122px;
+$logo-width: 230px;
+
+//banner
+$banner-height: 480px;
+
+//carousel
+$carousel-height: 750px;
+
+//footer
+$footer-background: #020940;
+$footer-height: 300px;
+
+// components
+$card-background: #e8e8e8;
+$form-background: #dedede;
+$vault-item-width: 15rem;
+$input-background: rgba(235, 235, 235, 0.5);
+
+
+// classes
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container,
+.__container {
+  height: fit-content;
+  max-width: varcontainer-width;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.center,
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.__page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: $page-min-height;
+  width: 100%;
+}
+
+

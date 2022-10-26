@@ -1,0 +1,15 @@
+{
+    // Set the default
+    "editor.formatOnSave": false,
+    // Enable per-language
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[vue]": {
+        "editor.formatOnSave": true
+    },
+    // "editor.defaultFormatter": "prettier-vscode",
+    "eslint.probe": ["javascript", "vue"],
+    "eslint.validate": ["javascript", "vue"],
+    "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"],
+}

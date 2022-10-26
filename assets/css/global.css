@@ -1,0 +1,136 @@
+:root{
+  --container-width: 1600px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  overflow-y: scroll;
+  background-color: #eee;
+}
+
+
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+h3{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+h4{
+  font-size: 1rem;
+  font-weight: 500;
+}
+h5{
+  font-size: 1rem;
+  font-weight: 300;
+}
+h6{
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+p{
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.muted {
+  color: #999;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.thin {
+  font-weight: 200;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.--blur {
+  filter: blur(5px);
+}
+
+.waiting {
+  pointer-events: none;
+  animation: flip 1s ease-in-out infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes flip {
+  from,
+  90% {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+
+@media screen and (max-width: 1920px) {
+  :root{
+  --container-width: 1200px;
+}
+}
+
+@media screen and (max-width: 1440px) {
+  :root{
+  --container-width: 900px;
+}
+}
+
+@media screen and (max-width: 1024px) {
+  :root{
+  --container-width: 100%;
+}
+
+}
+
+@media screen and (max-width: 800px) {
+  :root{
+  --container-width: 100%;
+}
+  
+}
+
+
+::-webkit-scrollbar {
+  width: 10px; /* Mostly for vertical scrollbars */
+  height: 10px; /* Mostly for horizontal scrollbars */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #508275;
+}
+
+::-webkit-scrollbar-thumb { /* Foreground */
+  background: #151a1e;
+}
+
+::-webkit-scrollbar-track { /* Background */
+  background: #fff;
+}
+
